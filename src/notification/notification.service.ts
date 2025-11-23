@@ -16,8 +16,7 @@ export class NotificationService {
     this.logger.warn('🚀 NotificationService initialized');
   }
 
-  // ТЕСТОВИЙ CRON: Спрацьовує кожні 10 секунд
-  @Cron('0 8 * * *')
+  @Cron('0 6 * * *')
   async handleDailyWeatherNotification() {
     this.logger.warn('🕐 Cron triggered at: ' + new Date().toLocaleString());
 
